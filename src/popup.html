@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valryan Live Extension</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../ext/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<div class="app">
+		<div class="container">
+
+			<header class="row">
+				<span class="vertical-title">Valryan Live <span class="label" id="live-status"></span></span>
+				<ul id="rs">
+					<li>
+						<a id="twitch-rs" class="button-bot" target="_blank">
+							<i class="fa fa-twitch" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a id="youtube-rs" class="button-bot" target="_blank" >
+							<i class="fa fa-youtube-play" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a id="discord-rs" class="button-bot" target="_blank">
+							<i class="fa fa-headphones" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</header>
+
+			<div class="row" id="online">
+				<div id="image-block" class="video">
+					<img id="live-image-preview" />
+					<span id="live-title"></span>
+					<span id="live-game"></span>
+					<a id="play-link" target="_blank"></a>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<script type='text/javascript' src='popup.js'></script>
+</body>
+</html>
