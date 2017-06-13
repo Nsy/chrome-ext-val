@@ -7,9 +7,9 @@ function buildPopup()
 	var liveStatus = getE("live-status");
 	var footer = getE('footer');
 	
-	getE("twitch-rs").href = STREAMER_EXTENSION._twitch_url;
-	getE("youtube-rs").href = STREAMER_EXTENSION._replay_url;
-	getE("discord-rs").href = STREAMER_EXTENSION._discord_url;
+	getE("twitch-rs").href = STREAMER_EXTENSION._parameters.constant_link.twitch + STREAMER_EXTENSION._parameters.streamer.twitch_id;
+	getE("youtube-rs").href = STREAMER_EXTENSION._parameters.constant_link.youtube + STREAMER_EXTENSION._parameters.streamer.youtube_id;
+	getE("discord-rs").href = STREAMER_EXTENSION._parameters.constant_link.discord + STREAMER_EXTENSION._parameters.streamer.discord_id;
 
 	if (bg.STREAMER_EXTENSION._isON == true)
 	{
@@ -18,7 +18,7 @@ function buildPopup()
 		var title = getE("live-title");
 		var game = getE("live-game");
 
-		getE("play-link").href = STREAMER_EXTENSION._twitch_url;
+		getE("play-link").href = STREAMER_EXTENSION._parameters.constant_link.twitch + STREAMER_EXTENSION._parameters.streamer.twitch_id;
 
 		liveStatus.classList.add("label-success");
 		liveStatus.textContent = "online"

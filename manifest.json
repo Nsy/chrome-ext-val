@@ -1,12 +1,10 @@
 {
    "manifest_version": 2,
-   "name": "Valryan Live Extension",
+   "name": "Valryan Live Extension Beta",
    "short_name": "Valryan",
    "description": "Ne ratez aucun live: Soyez informé dès qu'un live commence !",
    "version": "1.0.7",
    "author" : "Noelie Aka Verane",
-   "homepage_url": "https://www.youtube.com/channel/UC8d8zrRsYoHBHMBHnK5GlOQ",
-
    "background": {
       "persistent": true,
       "scripts": [ "src/background.js" ]

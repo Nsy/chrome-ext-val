@@ -1,0 +1,28 @@
+{
+    "streamer":
+    {
+	    "twitch_id": "valryantv",
+        "youtube_id": "UC8d8zrRsYoHBHMBHnK5GlOQ",
+        "discord_id": "cTzkRWB",
+        "twitter_id": "valryan12"
+    },
+    "api":
+    {
+        "client": "rpidprrpvo8taysa9yujqu7kcqztwi",
+        "url": "https://api.twitch.tv/kraken/streams/"
+    },
+    "badge":
+    {
+	    "title_online": "Stream - Online",
+        "title_offline": "Stream - Offline"
+    },
+    "debug": false,
+	"notification_title": "Twitch : Un live est en cours !",
+    "constant_link":
+    {
+        "youtube": "https://www.youtube.com/channel/",
+        "twitch": "https://www.twitch.tv/",
+        "discord": "https://discord.gg/",
+        "twitter": "https://twitter.com/"
+    }
+}
