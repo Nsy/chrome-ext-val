@@ -55,6 +55,9 @@ var STREAMER_EXTENSION = {
             opt.message = STREAMER_EXTENSION._streamData.stream.channel.status + " - " +  STREAMER_EXTENSION._streamData.stream.channel.game;
             opt.title = STREAMER_EXTENSION._parameters.notification_title;
             chrome.notifications.create('notifyON', opt, function(id) {});
+            chrome.notifications.onClicked.addListener(function(id, byUser) {
+                chrome.tabs.create({ url : STREAMER_EXTENSION._parameters.constant_link.twitch + STREAMER_EXTENSION._parameters.streamer.twitch_id });
+            })
             console.log('Notification sent for stream ' + STREAMER_EXTENSION._parameters.streamer.twitch_id + ' (Title:' + STREAMER_EXTENSION._streamData.stream.channel.status + ', Game:' + STREAMER_EXTENSION._streamData.stream.game + ')');
         }
     },
