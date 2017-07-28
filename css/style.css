@@ -83,6 +83,7 @@ header span {
 }
 #rs {
 	display: inline-flex !important;
+	padding-left: 35px;
 }
 #rs li a .fa {
 	font-size: 20px;
